@@ -319,21 +319,34 @@ button{
 /*회원가입 공통내용*/
 .joinRoot{
     width: 90%;
-    height: 210px;
+    height: 250px;
     border: 2px solid salmon;
     margin: 0 auto;
     margin-top: 99px;
+    display: table;
 }
-.joinRoot p{
-    font-size: 40px;
+.joinRoot div{
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid blue;
+}
+.joinRoot div p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 42px;
     text-align: center;
-    font-weight: 900;
     font-variant: small-caps;
-    padding-top: 50px;
 }
 #join_info{
     margin-top: 18px;
     text-align: center;
+    font-weight: 900;
+}
+#join_info li::before{
+    padding-right: 8px;
+    content: ">";
+}
+#join_info li:nth-child(1)::before{
+    content: "";
 }
 #join_info li{
     padding-right: 20px;
@@ -346,4 +359,8 @@ button{
     width: 90%;
     margin: 0 auto;
     height: 600px;
+}
+#joinInput h2{
+    font-size: 28px;
+    font-family: "맑은 고딕";
 }
