@@ -35,7 +35,7 @@ li{
     float: left;
     overflow: hidden;
     margin-left: 415px;
-    margin-top: 30px;
+    margin-top: 27px;
 }
 .container-sub1, .container-sub2{
     display: none;
@@ -60,14 +60,23 @@ li{
 }
 .column-wrap{
     display: flex;
-    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 .column{
+    margin: 0 auto;
+    justify-content: center;
     float: left;
     width: 7%;
     margin-top: 22px;
     color: #ddd;
-    margin-right: 10px;
+    text-align: center;
+}
+.container-sub2 .column-wrap{
+    width: 50%;
+}
+.container-sub2 .column{
+    width: 20%;
 }
 .column a{
     display: block;
