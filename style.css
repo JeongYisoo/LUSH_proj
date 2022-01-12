@@ -66,17 +66,12 @@ li{
 .column{
     margin: 0 auto;
     justify-content: center;
-    float: left;
-    width: 7%;
     margin-top: 22px;
     color: #ddd;
     text-align: center;
 }
 .container-sub2 .column-wrap{
     width: 50%;
-}
-.container-sub2 .column{
-    width: 20%;
 }
 .column a{
     display: block;
@@ -86,7 +81,6 @@ li{
     letter-spacing: -1px;
     word-spacing: -2px;
     padding: 11px 0px;
-    width: 93px;
 }
 .column a:hover{
     color: white;
@@ -329,7 +323,6 @@ button{
 .joinRoot{
     width: 90%;
     height: 250px;
-    border: 2px solid salmon;
     margin: 0 auto;
     margin-top: 99px;
     display: table;
@@ -337,13 +330,11 @@ button{
 .joinRoot div{
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid blue;
 }
-.joinRoot div p{
+.common_join p{
     font-family: 'Work Sans', sans-serif;
     font-size: 42px;
     text-align: center;
-    font-variant: small-caps;
 }
 #join_info{
     margin-top: 18px;
@@ -363,6 +354,10 @@ button{
     color: #aaa;
 }
 /*회원가입 - 정보입력*/
+.highlight{
+    color: red;
+    padding-right: 6px;
+}
 #joinInput{
     width: 90%;
     margin: 0 auto;
@@ -372,11 +367,19 @@ button{
     font-size: 28px;
     font-family: "맑은 고딕";
 }
-
-.join_hr{
+#join_hr{
     border-bottom: 2px solid black;
+    height: 50px;
 }
-.join_hr h2,p{
-    display: inline-block;
+#join_hr .basic_in{
+    font-size: 24px;
+    font-weight: 900;
+    float: left;
 }
-
+#join_hr .notice_in{
+    float: right;
+    margin-top: 22px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #BDBDBD;
+}
