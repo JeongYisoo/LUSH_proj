@@ -364,7 +364,6 @@ button{
 }
 /*회원가입 - 정보입력*/
 #joinInput{
-    border: 2px solid seagreen;
     width: 90%;
     margin: 0 auto;
     height: 600px;
@@ -373,3 +372,11 @@ button{
     font-size: 28px;
     font-family: "맑은 고딕";
 }
+
+.join_hr{
+    border-bottom: 2px solid black;
+}
+.join_hr h2,p{
+    display: inline-block;
+}
+
