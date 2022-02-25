@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ li{
     width: 48.4%;
     float: left;
     overflow: hidden;
-    margin-left: 443px;
+    margin-left: 407px;
     margin-top: 26.7px;
 }
 .container-sub1, .container-sub2{
@@ -112,12 +113,12 @@ li{
     clear: both;
 }
 #lushlogo{
-    width: 98px;
-    height: 31px;
+    width: 95px;
+    height: 28px;
     position: fixed;
     z-index: 10;
     top: 36px;
-    left: 100px;
+    left: 40px;
 }
 #menu{
     margin-top: 37px;
@@ -128,7 +129,10 @@ li{
     vertical-align: middle;
 }
 #menu li{
-    margin-right: 26px;
+    margin-right: 22px;
+}
+#menu #info{
+    margin-left: 50px;
 }
 #menu li:nth-child(3){
     position: relative;
@@ -289,9 +293,12 @@ h3{
     color: #0F1829;
 }
 /*푸터*/
-#under_img img{
+#under_img{
     width: 100%;
+}
+#under_img img{
     height: 167px;
+    width: 100%;
 }
 footer{
     color: white;
@@ -373,16 +380,13 @@ button{
     height: 250px;
     margin: 0 auto;
     margin-top: 99px;
-    display: table;
-}
-.joinRoot div{
-    display: table-cell;
-    vertical-align: middle;
 }
 .common_join p{
     font-family: 'Work Sans', sans-serif;
-    font-size: 42px;
+    font-weight: 800;
+    font-size: 44px;
     text-align: center;
+    padding-top: 80px;
 }
 #join_info{
     margin-top: 18px;
@@ -401,8 +405,67 @@ button{
     font-weight: bold;
     color: #aaa;
 }
+/*회원가입 - 유형선택*/
+.choose{
+    height: 240px;
+}
+#p-unMargin{
+    padding-bottom: 16px;
+}
+#choose-type{
+    width: 90%;
+    margin: 0 auto;
+}
+#choose-type #wrap-sns{
+    margin: 0 auto;
+    width: 450px;
+    padding-bottom: 150px;
+}
+.sns-login{
+    width: 400px;
+    height: 57px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+.sns-login a{
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.sns-login:first-child{
+    background-color: black;
+}
+.sns-login:first-child a{
+    color: white;
+}
+#wrap-sns .caution{
+    width: 86%;
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 17px;
+    line-height: 20px;
+}
+#wrap-caution{
+    padding-top: 40px;
+    text-align: center;
+}
+#wrap-caution p, a{
+    font-size: 11.5px;
+    font-weight: bold;
+    color: #666;
+}
 /*회원가입 - 정보입력*/
-.highlight{
+.notice_in span, #makeAcc span{
     color: red;
     padding-right: 6px;
 }
@@ -411,23 +474,34 @@ button{
     margin: 0 auto;
     height: 600px;
 }
-#joinInput h2{
-    font-size: 28px;
-    font-family: "맑은 고딕";
-}
-#join_hr{
+#joinHr{
     border-bottom: 2px solid black;
     height: 50px;
 }
-#join_hr .basic_in{
+#joinHr .basic_in{
     font-size: 24px;
     font-weight: 900;
     float: left;
+    border: 2px solid burlywood;
+    margin-top: 10px;
+    margin-left: 5px;
 }
-#join_hr .notice_in{
+#joinHr .notice_in{
     float: right;
     margin-top: 22px;
     font-size: 12px;
     font-weight: 600;
     color: #BDBDBD;
+}
+#makeAcc label{
+    border: 1px solid red;
+    margin-left: 22px;
+}
+#makeAcc input[type=text], #makeAcc input[type=password]{
+    width: 20%;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+}
+#makeAcc input{
+    margin-left: 10px;
 }

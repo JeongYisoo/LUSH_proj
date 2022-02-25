@@ -25,30 +25,20 @@
     </div>
 </aside>
 <!--내용-->
-<!--회원가입 상단 공통 내용-->
-<section class="joinRoot">
-    <div class="common_join">
-        <p>JOIN US</p>
-        <ul id="join_info">
-            <li>약관동의</li>
-            <li style="color: black;">정보입력</li>
-            <li>가입완료</li>
-        </ul>
-    </div>
-</section>
+<div id="joinTop"></div>
 <!--회원가입 정보입력-->
 <section id="joinInput">
-    <div id="join_hr">
+    <div id="joinHr">
         <div class="basic_in">기본정보</div>
-        <div class="notice_in"><span class="highlight">&squf;</span>표시는 반드시 입력하셔야 하는 항목입니다.</div>
+        <div class="notice_in"><span>&squf;</span>표시는 반드시 입력하셔야 하는 항목입니다.</div>
     </div>
-    <form>
-        <label><span class="highlight">&squf;</span>아이디 <input type="text"></label><br>
-        <label><span class="highlight">&squf;</span>비밀번호 <input type="password"></label><br>
-        <label><span class="highlight">&squf;</span>비밀번호 확인 <input type="password"></label><br>
-        <label><span class="highlight">&squf;</span>이름 <input type="text" value="홍길동"></label><br>
+    <form id="makeAcc">
+        <label><span>&squf;</span>아이디 <input type="text"></label><br>
+        <label><span>&squf;</span>비밀번호 <input type="password"></label><br>
+        <label><span>&squf;</span>비밀번호 확인 <input type="password"></label><br>
+        <label><span>&squf;</span>이름 <input type="text" value="홍길동"></label><br>
         <label><span style="visibility:hidden;">&squf;</span>닉네임 <input type="text"></label><br>
-        <label><span class="highlight">&squf;</span>이메일 <input type="text">
+        <label><span>&squf;</span>이메일 <input type="text">
             <select id="mail_option">
                 <option>직접입력</option>
                 <option>naver.com</option>
@@ -64,6 +54,7 @@
 <script type="text/javascript">
     $(document).ready( function() {
         $("#headers").load("./common/header.html");
+        $("#joinTop").load("./common/joinTop.html");
         $("#footers").load("./common/footer.html");
     });
 </script>
