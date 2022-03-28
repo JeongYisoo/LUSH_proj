@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>러쉬코리아(LUSH KOREA) </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--상단 헤더-->
+<div id="headers"></div>
+<!--사이드바-->
+<aside>
+    <div id="side">
+        <div>
+        <img src="./img/talk.png">
+        </div>
+        <span>
+        상담톡
+        </span>
+    </div>
+</aside>
+<!--내용-->
+<!--회원가입 상단 공통 내용-->
+<section class="joinRoot choose">
+    <div class="common_join" id="p-unMargin">
+        <p>JOIN US</p>
+        </ul>
+    </div>
+</section>
+<!--회원가입 유형 선택-->
+<section id="choose-type">
+    <div id="wrap-sns">
+        <div class="sns-login"><a href="agree_term.html">쇼핑몰 회원가입</a></div>
+        <div class="sns-login nv"><a href="#">아이디 회원가입</a></div>
+        <p class="caution">SNS계정을 연동하여 빠르고 쉽고 안전하게 회원가입 할 수 있습니다.<br> 이 과정에서 고객님의 데이터는 철저하게 보호됩니다.</p>
+        <div id="wrap-caution">
+        <p>이미 쇼핑몰 회원이세요? <a href="userLogin.html">로그인</a></p>
+        </div>
+    </div>
+</section>
+<!--푸터-->
+<div id="footers"></div>
+
+<!--script-->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready( function() {
+        $("#headers").load("./common/header.html");
+        $("#footers").load("./common/footer.html");
+    });
+</script>
+</body>
+</html>
